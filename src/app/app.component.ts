@@ -14,4 +14,11 @@ export class AppComponent {
   title = 'angular-basics';
 
   isImagedisable:boolean =false;
+
+  searchValue:string="";
+  changeSearchValue(eventData:any){
+    console.log("Input value",<HTMLInputElement>eventData.target.value);
+    this.searchValue = (<HTMLInputElement>eventData.target).value;
+
+  }
 }

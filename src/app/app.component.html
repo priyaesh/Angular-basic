@@ -6,3 +6,10 @@
   </p>
   <img alt="item" [src]= "imageUrl" [hidden]="isImagedisable">
 </div>
+<div>
+  <span>
+    <b>Search</b>
+    <input type="text" (input)="changeSearchValue($event)">
+    <span>You searched for "{{searchValue}}"</span>
+  </span>
+</div>
