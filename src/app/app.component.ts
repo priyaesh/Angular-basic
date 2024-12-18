@@ -10,5 +10,8 @@ import { ContainerComponent } from './Container/containerComponent';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  imageUrl:string ='/assets/PhotosWithSanta.webp';
   title = 'angular-basics';
+
+  isImagedisable:boolean =false;
 }
